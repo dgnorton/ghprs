@@ -12,51 +12,6 @@ import (
 	"github.com/influxdata/influxdb/client/v2"
 )
 
-//var team = map[string]struct{}{
-//	"121watts":             struct{}{},
-//	"alexpaxton":           struct{}{},
-//	"becketsean":           struct{}{},
-//	"benbjohnson":          struct{}{},
-//	"benstronaut":          struct{}{},
-//	"corylanou":            struct{}{},
-//	"DanielMorsing":        struct{}{},
-//	"dgnorton":             struct{}{},
-//	"e-dard":               struct{}{},
-//	"ELKster":              struct{}{},
-//	"fred-influx":          struct{}{},
-//	"glogic":               struct{}{},
-//	"gunnaraasen":          struct{}{},
-//	"influxdb-denver-pair": struct{}{},
-//	"jackzampolin":         struct{}{},
-//	"jademcgough":          struct{}{},
-//	"jboursiquot":          struct{}{},
-//	"jginfluxdata":         struct{}{},
-//	"joelegasse":           struct{}{},
-//	"jsternberg":           struct{}{},
-//	"jwilder":              struct{}{},
-//	"kfitzpatrick":         struct{}{},
-//	"kostasb":              struct{}{},
-//	"mark-rushakoff":       struct{}{},
-//	"markbates":            struct{}{},
-//	"michael-influxdb":     struct{}{},
-//	"mjdesa":               struct{}{},
-//	"nathanielc":           struct{}{},
-//	"pauldix":              struct{}{},
-//	"rkuchan":              struct{}{},
-//	"rossmcdonald":         struct{}{},
-//	"rothrock":             struct{}{},
-//	"ShubhraKar":           struct{}{},
-//	"sparrc":               struct{}{},
-//	"timraymond":           struct{}{},
-//	"toddboom":             struct{}{},
-//	"wfro":                 struct{}{},
-//	"willpiers":            struct{}{},
-//	"goller":               struct{}{},
-//	"nhaugo":               struct{}{},
-//	"otoolep":              struct{}{},
-//	"jvshahid":             struct{}{},
-//}
-
 func loadTeam(filename string) (map[string]struct{}, error) {
 	b, err := ioutil.ReadFile(filename)
 	if err != nil {
